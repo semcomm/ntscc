@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <title>NTSCC</title>
+    <meta name="description" content="Lithium Description" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link href="css/plugins.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/application.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+
+<body>
+
+    <!-- ABOUT -->
+
+    <section id="page-about" class="section">
+      <div align="center" style="padding-bottom: 50px;">
+        <p class="heading h-01">Nonlinear Transform Source-Channel Coding <br> for Semantic Communications</p>
+
+        <p class="copy-02">
+          Jincheng Dai <a href="#">&midast;</a> &nbsp;&nbsp;&nbsp;
+          Sixian Wang <a href="#">&midast;</a> &nbsp;&nbsp;&nbsp;
+          Kailin Tan <a href="#">&midast;</a> &nbsp;&nbsp;&nbsp;
+          Zhongwei Si <a href="#">&midast;</a> &nbsp;&nbsp;&nbsp;
+          Xiaoqi Qin <a href="#"><sup>&ddagger;</sup></a> &nbsp;&nbsp;&nbsp;
+          Kai Niu <a href="#">&midast;</a> &nbsp;&nbsp;&nbsp;
+          Ping Zhang <a href="#"><sup>&ddagger;</sup></a>
+        </p>
+      </div>
+
+      <div class="site-inner" style="padding-top: 10px;">
+        <h3 class="heading h-03">Abstract</h3>
+
+        <p class='copy-02'>In this paper, we propose a new class of high-efficient deep joint source-channel coding methods that can closely adapt to the source distribution under the nonlinear transform, it can be collected under the name nonlinear transform source-channel coding (NTSCC). In the considered model, the transmitter first learns a nonlinear analysis transform to map the source data into latent space, then transmits the latent representation to the receiver via deep joint source-channel coding. Our model incorporates the nonlinear transform as a strong prior to effectively extract the source semantic features and provide side information for source-channel coding. Unlike existing conventional deep joint source-channel coding methods, the proposed NTSCC essentially learns both the source latent representation and an entropy model as the prior on the latent representation. Accordingly, novel adaptive rate transmission and hyperprior-aided codec refinement mechanisms are developed to upgrade deep joint source-channel coding. The whole system design is formulated as an optimization problem whose goal is to minimize the end-to-end transmission rate-distortion performance under established perceptual quality metrics. Across test image sources with various resolutions, we find that the proposed NTSCC transmission method generally outperforms both the analog transmission using the standard deep joint source-channel coding and the classical separation-based digital transmission. Notably, the proposed NTSCC method can potentially support future semantic communications due to its content-aware ability and perceptual optimization goal.
+        </p>
+      </div>
+      <br>
+
+      <div class="site-inner" style="padding-top: 50px;">
+        <h3 class="heading h-03">Rate adaption demo</h3>
+
+        <div align="center" style="padding-top:20px;padding-bottom:10px">
+          <img src="ra_demo.png" width=100%> <br>
+        </div>
+
+        <p class='copy-02'>A toy visualization demo of the rate adaption results. Apart from the original image, the other three figures show the allocated channel bandwidth cost for each patch, which are adjusted by the hyperparameters &#955 and &#951.
+        </p>
+      </div>
+
+      <div class="site-inner" style="padding-top: 50px;">
+        <h3 class="heading h-03">Experimental Results</h3>
+
+        <div align="center" style="padding-top:20px;padding-bottom:10px">
+          <img src="rd_curve.png" width=60%> <br>
+        </div>
+
+        <p align="center" class='copy-02'><b>PSNR-CBR curves</b> on <i>Kodak</i> and <i>CLIC Professional Validation Set over the AWGN channel at SNR = 10dB</i>.
+        </p>
+        <br>
+        <br>
+        <div align="center" style="padding-top:20px;padding-bottom:10px">
+          <img src="snr_psnr_curve.png" width=90%> <br>
+        </div>
+
+        <p align="center" class='copy-02'><b>PSNR-SNR curves</b> on the maximum channel bandwidth ratio R = 1/16</i>.
+        </p>
+
+      </div>
+
+
+
+      <div class="site-inner" style="padding-top:50px;">
+        <p class="heading h-03"> Resources </p>
+          <ul style="line-height:1.5; padding-left: 50px; padding-right: 50px">
+          　　<li class="copy-02"> Paper: <a href="https://arxiv.org/abs/2112.10961">arXiv</a></li>
+          　　<li class="copy-02"> Code:  coming soon</li>
+          </ul>
+      </div>
+
+
+      <div class="site-inner" style="padding-top:50px;">
+        <p class='heading h-03'> Citation</p>
+        <p class="copy-02"> @article{dai2021nonlinear,<br>
+          &nbsp; &nbsp; title={Nonlinear Transform Source-Channel Coding for Semantic Communications},<br>
+          &nbsp; &nbsp; author={Dai, Jincheng and Wang, Sixian and Tan, Kailin and Si, Zhongwei and Qin, Xiaoqi and Niu, Kai and Zhang, Ping},<br>
+          &nbsp; &nbsp; journal={arXiv preprint arXiv:2112.10961},<br>
+          &nbsp; &nbsp; year={2021}<br>
+        } <br>
+        </p>
+      </div>
+
+    <section class="section">
+
+</body>
+</html>

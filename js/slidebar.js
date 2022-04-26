@@ -57,15 +57,9 @@ let known = {
 
 let PREFIX = 'image/';
 let order = ['gracehues-photography', 'kodim15', 'kodim02', 'omri-d-cohen'];
-let captionTypeToIndex = {'bpp': 1, 'bytes': 2};
-let captionIndex = 1;
 let currentImage = null;
 
 $(document).ready(function () {
-    $('input[type=radio][name=bpp-bytes-radio]').change(function() {
-        captionIndex = captionTypeToIndex[this.value];
-        showImgAndUpdateUI(currentImage, true);
-    });
     $('#toggle-aff-fa-footnote').on('click', function (e) {
         $('#footnote-aff-fa').toggle();
         $('#footnote-aff-mi').hide();
@@ -123,7 +117,7 @@ $(document).ready(function () {
             });
             $('.image-selector').append(img);
         });
-        showImgAndUpdateUI(order[firstImageIndex], true);
+        showImgAndUpdateUI(order[firstImageIndex], false);
     }
 });
 
@@ -134,7 +128,7 @@ function showDividerInfo() {
 function showLeftImg(img, imgInfo, fullres, loadingRatio) {
     console.log('Showing left', img[0]);
     let imgName = img[0];
-    let img_caption = img[captionIndex];
+    let img_caption = img[1];
     $('#left-info-button').text(img_caption);
     $('#img-info-button').text(imgInfo);
     $('#view-full-res').attr('href', fullres);
@@ -207,7 +201,7 @@ function showRights(imgName, imgs, force) {
             }).prop("disabled", true).text(" "));
             return;
         }
-        let caption = item[captionIndex];
+        let caption = item[1];
         caption = caption.replace('x', '\u00D7');
         let imgTag = $("<img>", {'src': PREFIX + imgName, 'id': 'right-img-' + index.toString()});
         if (index !== 0) {

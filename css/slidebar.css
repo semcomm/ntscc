@@ -138,12 +138,7 @@ h4 {
     left: 30px;
     background-color: black;
 }
-.page-container {
-    position: relative;
-    width: 100%;
-    margin: 50px 0;
-}
-.page-container .inner {
+.inner {
     position: relative;
     width: 100%;
     max-width: 80%;

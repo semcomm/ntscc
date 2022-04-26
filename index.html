@@ -15,99 +15,15 @@
     <link href="css/plugins.css" media="screen" rel="stylesheet" type="text/css"/>
     <link href="css/application.css" media="screen" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="css/slidebar.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169820266-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-169820266-1');
     </script>
-
-    <style>
-
-        .crx_bdwk_down_wrap {
-            top: 70%;
-            left: 0;
-            position: fixed;
-            z-index: 99999999;
-            color: #fff;
-            user-select: none;
-        }
-
-        .crx_bdwk_down_wrap .crx_bdwk_down_loading {
-            background-color: #666;
-            cursor: wait;
-            width: 126px;
-            text-align: center;
-            padding: 16px 0;
-        }
-
-        .crx_bdwk_down_wrap .crx_bdwk_down_loading p {
-            font-size: 14px;
-        }
-
-        .crx_bdwk_down_wrap .crx_bdwk_down_loading small {
-            font-size: 10px;
-        }
-
-        .crx_bdwk_down_wrap .crx_bdwk_down_btn {
-            width: 126px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            font-size: 14px;
-            background-color: #dd5a57;
-            position: relative;
-        }
-
-        .crx_bdwk_down_wrap .crx_bdwk_down_types {
-            display: flex;
-            text-align: center;
-            align-items: center;
-            background-color: #666;
-            font-size: 12px;
-        }
-
-        .crx_bdwk_down_wrap .crx_bdwk_down_types div {
-            position: relative;
-        }
-
-        .crx_bdwk_down_wrap .crx_bdwk_down_types div:after {
-            content: ' ';
-            height: 12px;
-            width: 1px;
-            background-color: #eee;
-            position: absolute;
-            top: 10px;
-            right: 0;
-            transform: scaleX(0.5);
-        }
-
-        .crx_bdwk_down_wrap .crx_bdwk_down_types div:last-child:after {
-            display: none;
-        }
-
-        .crx_bdwk_down_wrap .crx_bdwk_down_types_check {
-            flex: 1;
-            color: #dd5a57;
-            padding: 8px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .crx_bdwk_down_wrap .crx_bdwk_down_types_uncheck {
-            flex: 1;
-            padding: 8px;
-            cursor: pointer;
-            color: #fff;
-            font-weight: lighter;
-        }
-    </style>
 </head>
 
 <body>
@@ -131,44 +47,50 @@
 
 
     <!-- Slide Bar -->
-    <div class="page-container">
-        <div class="inner">
-
-            <div class="comparison-slider-wrapper outlined">
-                <div class="image-selector"><img id="img-sel-0" class="thumb img-sel-0" src="image/gracehues-photography/thumb.png"><img id="img-sel-1" class="thumb img-sel-1 thumb-active" src="image/kodim15/thumb.png"><img id="img-sel-2" class="thumb img-sel-2" src="image/kodim02/thumb.png"><img id="img-sel-3" class="thumb img-sel-3" src="image/omri-d-cohen/thumb.png"></div>
-                <div class="comparison-slider noselect">
-                    <div id="loading-placeholder" class="tall" style="display: none; padding-top: 0px;"></div>
-                    <div id="right-imgs" showing="kodim15" style=""><img src="image/kodim15/BPG+LDPC_KdivN=0.0427_PSNR=34.2248_MS-SSIM=0.9693_LPIPS=0.0819_Q=31.png" id="right-img-0" style=""><img src="image/kodim15/BPG+LDPC_KdivN=0.0557_PSNR=35.2298_MS-SSIM=0.9752_LPIPS=0.0629_Q=29.png" id="right-img-1" style="display: none;"><img src="image/kodim15/DJSCC_KdivN0.0416_PSNR31.103_LPIPS0.157.png" id="right-img-2" style="display: none;"><img src="image/kodim15/original.png" id="right-img-3" style="display: none;"></div>
-                    <div class="right-selector"><div class="btn-group-vertical btn-group-sm" role="group"><button type="button" class="btn float-right right-sel-button btn-block active btn-dark" id="right-btn-idx-0">BPG+LDPC<span class="codec-info">(0.0427 CBR)</span></button><button type="button" class="btn float-right right-sel-button btn-block btn-light" id="right-btn-idx-1">BPG+LDPC<span class="codec-info">(0.0557 CBR)</span></button><button type="button" class="btn float-right right-sel-button btn-block btn-light" id="right-btn-idx-2">DJSCC<span class="codec-info">(0.0416 CBR)</span></button><button type="button" class="btn float-right right-sel-button btn-block btn-light" id="right-btn-idx-3">Original</button></div></div>
-                    <div class="resize noselect" id="left-img" style="width: 50%;">
-                        <!-- JS-generated img tag with id "left" here -->
-                        <img id="left" src="image/kodim15/NTSCC_KdivN0.039_PSNR33.621_MSSSIM16.453_LPIPS0.024.png" style="width: 566.797px;"><img id="left" style="width: 566.797px;"><img id="left" style="width: 566.797px;"><img id="left" style="width: 566.797px;"></div>
-                    <div class="left-selector">
-                        <div class="btn-group-vertical" role="group">
-                            <button type="button" class="btn btn-dark btn-block disabled-button highlighted" id="left-info-button" disabled="">NTSCC (Perceptual): 0.039 CBR</button>
-                        </div>
-                    </div>
-                    <div class="img-info">
-                        <div class="btn-group-vertical" role="group">
-                            <button type="button" class="btn btn-sm btn-dark btn-block disabled-button" id="img-info-button" disabled="">Kodak/kodim15.png</button>
-                        </div>
-                    </div>
-                    <div class="divider" style="left: 50%;"></div>
-                    <div class="divider-info">Drag Slider to Compare</div>
+    <div class="inner">
+        <div class="comparison-slider-wrapper outlined">
+            <div class="image-selector">
+                <!-- JS-generated -->
+            </div>
+            <div class="comparison-slider noselect">
+                <div id="loading-placeholder" class="tall"></div>
+                <div id="right-imgs" showing="loading">
+                    <!-- JS-generated img tag here -->
                 </div>
-                <div>
-                    <div class="row no-gutters">
-                        <div class="col-3">
+                <div class="right-selector">
+                    <div class="btn-group-vertical" role="group">
+                    <!-- JS-generated -->
+                    </div>
+                </div>
+                <div class="resize noselect" id="left-img">
+                    <!-- JS-generated img tag with id "left" here -->
+                </div>
+                <div class="left-selector">
+                    <div class="btn-group-vertical" role="group">
+                        <button type="button" class="btn btn-dark btn-block disabled-button highlighted" id="left-info-button" disabled>HiFiC (Ours)</button>
+                    </div>
+                </div>
+                <div class="img-info">
+                    <div class="btn-group-vertical" role="group">
+                        <button type="button" class="btn btn-sm btn-dark btn-block disabled-button" id="img-info-button" disabled>CLIC2020</button>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="divider-info">Loading...</div>
+            </div>
+            <div>
+                <div class="row no-gutters">
+                    <div class="col-3">
+                    </div>
+                    <div class="col-6">
+                        <div class="image-selector">
+                            <!-- JS-generated -->
                         </div>
-                        <div class="col-6">
-                            <div class="image-selector"><img id="img-sel-0" class="thumb img-sel-0" src="image/gracehues-photography/thumb.png"><img id="img-sel-1" class="thumb img-sel-1 thumb-active" src="image/kodim15/thumb.png"><img id="img-sel-2" class="thumb img-sel-2" src="image/kodim02/thumb.png"><img id="img-sel-3" class="thumb img-sel-3" src="image/omri-d-cohen/thumb.png"></div>
-                        </div>
-                        <div class="col-3 full-res-wrapper">
-                        </div>
+                    </div>
+                    <div class="col-3 full-res-wrapper">
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -257,8 +179,7 @@
     </section>
 </section>
 
-<script type="text/javascript" async="" src="js/jquery-3.2.1.slim.min.js"></script>
-<script type="text/javascript" async="" src="js/analytics.js"></script>
+<script src='js/jquery-3.2.1.slim.min.js'></script>
 <script type="text/javascript" async="" src="js/slidebar.js"></script>
 
 </body>

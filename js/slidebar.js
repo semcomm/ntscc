@@ -57,9 +57,15 @@ let known = {
 
 let PREFIX = 'image/';
 let order = ['gracehues-photography', 'kodim15', 'kodim02', 'omri-d-cohen'];
+let captionTypeToIndex = {'bpp': 1, 'bytes': 2};
+let captionIndex = 1;
 let currentImage = null;
 
 $(document).ready(function () {
+    $('input[type=radio][name=bpp-bytes-radio]').change(function() {
+        captionIndex = captionTypeToIndex[this.value];
+        showImgAndUpdateUI(currentImage, true);
+    });
     $('#toggle-aff-fa-footnote').on('click', function (e) {
         $('#footnote-aff-fa').toggle();
         $('#footnote-aff-mi').hide();
@@ -113,11 +119,11 @@ $(document).ready(function () {
                 let index = parseInt(imgSelId.replace("img-sel-", ""));
                 console.log(index);
                 let imgName = order[index];
-                showImgAndUpdateUI(imgName);
+                showImgAndUpdateUI(imgName, false);
             });
             $('.image-selector').append(img);
         });
-        showImgAndUpdateUI(order[firstImageIndex]);
+        showImgAndUpdateUI(order[firstImageIndex], true);
     }
 });
 
@@ -128,7 +134,7 @@ function showDividerInfo() {
 function showLeftImg(img, imgInfo, fullres, loadingRatio) {
     console.log('Showing left', img[0]);
     let imgName = img[0];
-    let img_caption = img[1];
+    let img_caption = img[captionIndex];
     $('#left-info-button').text(img_caption);
     $('#img-info-button').text(imgInfo);
     $('#view-full-res').attr('href', fullres);
@@ -171,8 +177,12 @@ function showLeftImg(img, imgInfo, fullres, loadingRatio) {
     leftImg.addEventListener('error', error);
 }
 
-function showRights(imgName, imgs) {
+function showRights(imgName, imgs, force) {
     let rightsDiv = $('#right-imgs')[0];
+    if (!force && rightsDiv.getAttribute("showing") === imgName) {
+        console.log("Right already on", imgName);
+        return;
+    }
     let rightSelector = $(".right-selector")[0];
     $(rightSelector).empty();
     $(rightsDiv).empty();
@@ -197,7 +207,7 @@ function showRights(imgName, imgs) {
             }).prop("disabled", true).text(" "));
             return;
         }
-        let caption = item[1];
+        let caption = item[captionIndex];
         caption = caption.replace('x', '\u00D7');
         let imgTag = $("<img>", {'src': PREFIX + imgName, 'id': 'right-img-' + index.toString()});
         if (index !== 0) {
@@ -257,13 +267,13 @@ function showRights(imgName, imgs) {
     });
 }
 
-function showImgAndUpdateUI(imgName) {
+function showImgAndUpdateUI(imgName, force) {
     currentImage = imgName;
     console.log('Showing', imgName);
     let imgs = known[imgName];
     let right = imgs['right'];
     showLeftImg(imgs['left'], imgs['imginfo'], imgs['fullres'], imgs['loadingRatio']);
-    showRights(imgName, right);
+    showRights(imgName, right, force);
 }
 
 

@@ -1,13 +1,13 @@
 let known = {
 'gracehues-photography': {
-    'imginfo': '',
+    'imginfo': 'gracehues-photography',
     'fullres': '',
     'loadingRatio': '66.66666666666666%',
-    'left': ['gracehues-photography/NTSCC_KdivN0.022_PSNR32.391_MSSSIM15.453_LPIPS0.043.png', 'NTSCC(Ours): 0.022k:n', 'NTSCC(Ours):0.043LPIPS'],
+    'left': ['gracehues-photography/NTSCC_KdivN0.022_PSNR32.391_MSSSIM15.453_LPIPS0.043.png', 'NTSCC (Perceptual): 0.022 CBR'],
     'right': [
-        ['gracehues-photography/BPG+LDPC_KdivN=0.022_PSNR=31.5982_MS-SSIM=13.4136_LPIPS=0.1935_Q=40.png', 'BPG+LDPC(0.022k:n)', 'BPG+LDPC(0.1935LPIPS)'],
-        ['gracehues-photography/BPG+LDPC_KdivN=0.0355_PSNR=33.3398_MS-SSIM=15.1179_LPIPS=0.1534_Q=36.png', 'BPG+LDPC(0.0355k:n)', 'BPG+LDPC(0.1534LPIPS)'],
-        ['gracehues-photography/DJSCC_KdivN0.0416_PSNR32.878_LPIPS0.198.png', 'DJSCC(0.0416k:n)', 'DJSCC(0.198LPIPS)'],
+        ['gracehues-photography/BPG+LDPC_KdivN=0.022_PSNR=31.5982_MS-SSIM=13.4136_LPIPS=0.1935_Q=40.png', 'BPG+LDPC(0.022 CBR)'],
+        ['gracehues-photography/BPG+LDPC_KdivN=0.0355_PSNR=33.3398_MS-SSIM=15.1179_LPIPS=0.1534_Q=36.png', 'BPG+LDPC(0.0355 CBR)'],
+        ['gracehues-photography/DJSCC_KdivN0.0416_PSNR32.878_LPIPS0.198.png', 'DJSCC(0.0416 CBR)'],
         ['gracehues-photography/original.jpg', 'Original', 'Original'],
     ],
     'thumb': 'gracehues-photography/thumb.png'
@@ -16,12 +16,11 @@ let known = {
     'imginfo': 'Kodak/kodim15.png',
     'fullres': '',
     'loadingRatio': '66.66666666666666%',
-    'left': ['kodim15/NTSCC_KdivN0.039_PSNR33.621_MSSSIM16.453_LPIPS0.024.png', 'NTSCC(Ours): 0.039k:n', 'NTSCC(Ours):0.024LPIPS'],
+    'left': ['kodim15/NTSCC_KdivN0.039_PSNR33.621_MSSSIM16.453_LPIPS0.024.png', 'NTSCC (Perceptual): 0.039 CBR'],
     'right': [
-        ['kodim15/BPG+LDPC_KdivN=0.0427_PSNR=34.2248_MS-SSIM=0.9693_LPIPS=0.0819_Q=31.png', 'BPG+LDPC(0.0427k:n)', 'BPG+LDPC(0.0819LPIPS)'],
-        ['kodim15/BPG+LDPC_KdivN=0.0557_PSNR=35.2298_MS-SSIM=0.9752_LPIPS=0.0629_Q=29.png', 'BPG+LDPC(0.0557k:n)', 'BPG+LDPC(0.0629LPIPS)'],
-        ['kodim15/DJSCC_KdivN0.0416_PSNR31.103_LPIPS0.157.png', 'DJSCC(0.0416k:n)', 'DJSCC(0.157LPIPS)'],
-        ['kodim15/NTSCC_KdivN0.024_PSNR31.565_MSSSIM14.35_LPIPS0.043.png', 'NTSCC(0.024k:n)', 'NTSCC(0.043LPIPS)'],
+        ['kodim15/BPG+LDPC_KdivN=0.0427_PSNR=34.2248_MS-SSIM=0.9693_LPIPS=0.0819_Q=31.png', 'BPG+LDPC(0.0427 CBR)'],
+        ['kodim15/BPG+LDPC_KdivN=0.0557_PSNR=35.2298_MS-SSIM=0.9752_LPIPS=0.0629_Q=29.png', 'BPG+LDPC(0.0557 CBR)'],
+        ['kodim15/DJSCC_KdivN0.0416_PSNR31.103_LPIPS0.157.png', 'DJSCC(0.0416 CBR)'],
         ['kodim15/original.png', 'Original', 'Original'],
     ],
     'thumb': 'kodim15/thumb.png'
@@ -30,25 +29,25 @@ let known = {
     'imginfo': 'Kodak/kodim02.png',
     'fullres': '',
     'loadingRatio': '66.66666666666666%',
-    'left': ['kodim02/NTSCC_KdivN0.023_PSNR31.463_MSSSIM12.115_LPIPS0.066.png', 'NTSCC(Ours): 0.023k:n', 'NTSCC(Ours):0.066LPIPS'],
+    'left': ['kodim02/NTSCC_KdivN0.023_PSNR31.463_MSSSIM12.115_LPIPS0.066.png', 'NTSCC (Perceptual): 0.023 CBR'],
     'right': [
-        ['kodim02/BPG+LDPC_KdivN=0.0224_PSNR=31.9747_MS-SSIM=0.9212_LPIPS=0.1823_Q=34.png', 'BPG+LDPC(0.0224k:n)', 'BPG+LDPC(0.1823LPIPS)'],
-        ['kodim02/BPG+LDPC_KdivN=0.0325_PSNR=33.0334_MS-SSIM=0.938_LPIPS=0.1381_Q=32.png', 'BPG+LDPC(0.0325k:n)', 'BPG+LDPC(0.1381LPIPS)'],
-        ['kodim02/DJSCC_KdivN0.0416_PSNR31.719_LPIPS0.175.png', 'DeepJSCC(0.0416k:n)', 'DeepJSCC(0.175LPIPS)'],
+        ['kodim02/BPG+LDPC_KdivN=0.0224_PSNR=31.9747_MS-SSIM=0.9212_LPIPS=0.1823_Q=34.png', 'BPG+LDPC(0.0224 CBR)'],
+        ['kodim02/BPG+LDPC_KdivN=0.0325_PSNR=33.0334_MS-SSIM=0.938_LPIPS=0.1381_Q=32.png', 'BPG+LDPC(0.0325 CBR)'],
+        ['kodim02/DJSCC_KdivN0.0416_PSNR31.719_LPIPS0.175.png', 'DeepJSCC(0.0416 CBR)'],
         ['kodim02/original.png', 'Original', 'Original'],
     ],
     'thumb': 'kodim02/thumb.png'
 },
 'omri-d-cohen': {
-    'imginfo': '',
+    'imginfo': 'omri-d-cohen',
     'fullres': '',
     'loadingRatio': '66.66666666666666%',
-    'left': ['omri-d-cohen/NTSCC_KdivN0.018_PSNR25.498_MSSSIM10.771_LPIPS0.128.png', 'NTSCC(Ours): 0.018k:n', 'NTSCC(Ours):0.128LPIPS'],
+    'left': ['omri-d-cohen/NTSCC_KdivN0.018_PSNR25.498_MSSSIM10.771_LPIPS0.128.png', 'NTSCC (Perceptual): 0.018 CBR'],
     'right': [
-        ['omri-d-cohen/BPG+LDPC_KdivN0.028_PSNR=24.76_MS-SSIM=0.8896_LPIPS=0.362_Q=42.png', 'BPG+LDPC(0.028k:n)', 'BPG+LDPC(0.362LPIPS)'],
-        ['omri-d-cohen/BPG+LDPC_KdivN0.049_PSNR=26.742_MS-SSIM=0.9305_LPIPS=0.231_Q=39.png', 'BPG+LDPC(0.049k:n)', 'BPG+LDPC(0.231LPIPS)'],
-        ['omri-d-cohen/DJSCC_KdivN0.0208_PSNR25.09_LPIPS0.441.png', 'DeepJSCC(0.0208k:n)', 'DeepJSCC(0.441LPIPS)'],
-        ['omri-d-cohen/DJSCC_KdivN0.0416_PSNR27.046_LPIPS0.25.png', 'DeepJSCC(0.0416k:n)', 'DeepJSCC(0.25LPIPS)'],
+        ['omri-d-cohen/BPG+LDPC_KdivN0.028_PSNR=24.76_MS-SSIM=0.8896_LPIPS=0.362_Q=42.png', 'BPG+LDPC(0.028 CBR)'],
+        ['omri-d-cohen/BPG+LDPC_KdivN0.049_PSNR=26.742_MS-SSIM=0.9305_LPIPS=0.231_Q=39.png', 'BPG+LDPC(0.049 CBR)'],
+        ['omri-d-cohen/DJSCC_KdivN0.0208_PSNR25.09_LPIPS0.441.png', 'DeepJSCC(0.0208 CBR)'],
+        ['omri-d-cohen/DJSCC_KdivN0.0416_PSNR27.046_LPIPS0.25.png', 'DeepJSCC(0.0416 CBR)'],
         ['omri-d-cohen/original.jpg', 'Original', 'Original'],
     ],
     'thumb': 'omri-d-cohen/thumb.png'
@@ -58,15 +57,9 @@ let known = {
 
 let PREFIX = 'image/';
 let order = ['gracehues-photography', 'kodim15', 'kodim02', 'omri-d-cohen'];
-let captionTypeToIndex = {'bpp': 1, 'bytes': 2};
-let captionIndex = captionTypeToIndex['bytes'];
 let currentImage = null;
 
 $(document).ready(function () {
-    $('input[type=radio][name=bpp-bytes-radio]').change(function() {
-        captionIndex = captionTypeToIndex[this.value];
-        showImgAndUpdateUI(currentImage, true);
-    });
     $('#toggle-aff-fa-footnote').on('click', function (e) {
         $('#footnote-aff-fa').toggle();
         $('#footnote-aff-mi').hide();
@@ -120,11 +113,11 @@ $(document).ready(function () {
                 let index = parseInt(imgSelId.replace("img-sel-", ""));
                 console.log(index);
                 let imgName = order[index];
-                showImgAndUpdateUI(imgName, false);
+                showImgAndUpdateUI(imgName);
             });
             $('.image-selector').append(img);
         });
-        showImgAndUpdateUI(order[firstImageIndex], false);
+        showImgAndUpdateUI(order[firstImageIndex]);
     }
 });
 
@@ -135,7 +128,7 @@ function showDividerInfo() {
 function showLeftImg(img, imgInfo, fullres, loadingRatio) {
     console.log('Showing left', img[0]);
     let imgName = img[0];
-    let img_caption = img[captionIndex];
+    let img_caption = img[1];
     $('#left-info-button').text(img_caption);
     $('#img-info-button').text(imgInfo);
     $('#view-full-res').attr('href', fullres);
@@ -178,12 +171,8 @@ function showLeftImg(img, imgInfo, fullres, loadingRatio) {
     leftImg.addEventListener('error', error);
 }
 
-function showRights(imgName, imgs, force) {
+function showRights(imgName, imgs) {
     let rightsDiv = $('#right-imgs')[0];
-    if (!force && rightsDiv.getAttribute("showing") === imgName) {
-        console.log("Right already on", imgName);
-        return;
-    }
     let rightSelector = $(".right-selector")[0];
     $(rightSelector).empty();
     $(rightsDiv).empty();
@@ -208,7 +197,7 @@ function showRights(imgName, imgs, force) {
             }).prop("disabled", true).text(" "));
             return;
         }
-        let caption = item[captionIndex];
+        let caption = item[1];
         caption = caption.replace('x', '\u00D7');
         let imgTag = $("<img>", {'src': PREFIX + imgName, 'id': 'right-img-' + index.toString()});
         if (index !== 0) {
@@ -268,13 +257,13 @@ function showRights(imgName, imgs, force) {
     });
 }
 
-function showImgAndUpdateUI(imgName, force) {
+function showImgAndUpdateUI(imgName) {
     currentImage = imgName;
     console.log('Showing', imgName);
     let imgs = known[imgName];
     let right = imgs['right'];
     showLeftImg(imgs['left'], imgs['imginfo'], imgs['fullres'], imgs['loadingRatio']);
-    showRights(imgName, right, force);
+    showRights(imgName, right);
 }
 
 

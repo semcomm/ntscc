@@ -5,9 +5,9 @@ let known = {
     'loadingRatio': '66.66666666666666%',
     'left': ['gracehues-photography/NTSCC_KdivN0.022_PSNR32.391_MSSSIM15.453_LPIPS0.043.png', 'NTSCC (Perceptual): 0.022 CBR'],
     'right': [
-        ['gracehues-photography/BPG+LDPC_KdivN=0.022_PSNR=31.5982_MS-SSIM=13.4136_LPIPS=0.1935_Q=40.png', 'BPG+LDPC(0.022 CBR)'],
-        ['gracehues-photography/BPG+LDPC_KdivN=0.0355_PSNR=33.3398_MS-SSIM=15.1179_LPIPS=0.1534_Q=36.png', 'BPG+LDPC(0.0355 CBR)'],
-        ['gracehues-photography/DJSCC_KdivN0.0416_PSNR32.878_LPIPS0.198.png', 'DJSCC(0.0416 CBR)'],
+        ['gracehues-photography/BPG+LDPC_KdivN=0.022_PSNR=31.5982_MS-SSIM=13.4136_LPIPS=0.1935_Q=40.png', 'BPG+LDPC (0.022 CBR)'],
+        ['gracehues-photography/BPG+LDPC_KdivN=0.0355_PSNR=33.3398_MS-SSIM=15.1179_LPIPS=0.1534_Q=36.png', 'BPG+LDPC (0.036 CBR)'],
+        ['gracehues-photography/DJSCC_KdivN0.0416_PSNR32.878_LPIPS0.198.png', 'Deep JSCC (0.042 CBR)'],
         ['gracehues-photography/original.jpg', 'Original', 'Original'],
     ],
     'thumb': 'gracehues-photography/thumb.png'
@@ -16,11 +16,12 @@ let known = {
     'imginfo': 'Kodak/kodim15.png',
     'fullres': '',
     'loadingRatio': '66.66666666666666%',
-    'left': ['kodim15/NTSCC_KdivN0.039_PSNR33.621_MSSSIM16.453_LPIPS0.024.png', 'NTSCC (Perceptual): 0.039 CBR'],
+    'left': ['kodim15/NTSCC_KdivN0.024_PSNR31.565_MSSSIM14.35_LPIPS0.043.png', 'NTSCC (Perceptual): 0.024 CBR'],
     'right': [
-        ['kodim15/BPG+LDPC_KdivN=0.0427_PSNR=34.2248_MS-SSIM=0.9693_LPIPS=0.0819_Q=31.png', 'BPG+LDPC(0.0427 CBR)'],
-        ['kodim15/BPG+LDPC_KdivN=0.0557_PSNR=35.2298_MS-SSIM=0.9752_LPIPS=0.0629_Q=29.png', 'BPG+LDPC(0.0557 CBR)'],
-        ['kodim15/DJSCC_KdivN0.0416_PSNR31.103_LPIPS0.157.png', 'DJSCC(0.0416 CBR)'],
+        ['kodim15/BPG+LDPC_KdivN=0.027_PSNR=32.553_MS-SSIM=0.9563_LPIPS=0.1211_Q=34.png', 'BPG+LDPC (0.027 CBR)'],
+        ['kodim15/BPG+LDPC_KdivN=0.0427_PSNR=34.2248_MS-SSIM=0.9693_LPIPS=0.0819_Q=31.png', 'BPG+LDPC (0.043 CBR)'],
+        ['kodim15/BPG+LDPC_KdivN=0.0557_PSNR=35.2298_MS-SSIM=0.9752_LPIPS=0.0629_Q=29.png', 'BPG+LDPC (0.056 CBR)'],
+        ['kodim15/DJSCC_KdivN0.0416_PSNR31.103_LPIPS0.157.png', 'Deep JSCC (0.042 CBR)'],
         ['kodim15/original.png', 'Original', 'Original'],
     ],
     'thumb': 'kodim15/thumb.png'
@@ -31,9 +32,9 @@ let known = {
     'loadingRatio': '66.66666666666666%',
     'left': ['kodim02/NTSCC_KdivN0.023_PSNR31.463_MSSSIM12.115_LPIPS0.066.png', 'NTSCC (Perceptual): 0.023 CBR'],
     'right': [
-        ['kodim02/BPG+LDPC_KdivN=0.0224_PSNR=31.9747_MS-SSIM=0.9212_LPIPS=0.1823_Q=34.png', 'BPG+LDPC(0.0224 CBR)'],
-        ['kodim02/BPG+LDPC_KdivN=0.0325_PSNR=33.0334_MS-SSIM=0.938_LPIPS=0.1381_Q=32.png', 'BPG+LDPC(0.0325 CBR)'],
-        ['kodim02/DJSCC_KdivN0.0416_PSNR31.719_LPIPS0.175.png', 'DeepJSCC(0.0416 CBR)'],
+        ['kodim02/BPG+LDPC_KdivN=0.0224_PSNR=31.9747_MS-SSIM=0.9212_LPIPS=0.1823_Q=34.png', 'BPG+LDPC (0.023 CBR)'],
+        ['kodim02/BPG+LDPC_KdivN=0.0325_PSNR=33.0334_MS-SSIM=0.938_LPIPS=0.1381_Q=32.png', 'BPG+LDPC (0.033 CBR)'],
+        ['kodim02/DJSCC_KdivN0.0416_PSNR31.719_LPIPS0.175.png', 'Deep JSCC (0.042 CBR)'],
         ['kodim02/original.png', 'Original', 'Original'],
     ],
     'thumb': 'kodim02/thumb.png'
@@ -44,19 +45,32 @@ let known = {
     'loadingRatio': '66.66666666666666%',
     'left': ['omri-d-cohen/NTSCC_KdivN0.018_PSNR25.498_MSSSIM10.771_LPIPS0.128.png', 'NTSCC (Perceptual): 0.018 CBR'],
     'right': [
-        ['omri-d-cohen/BPG+LDPC_KdivN0.028_PSNR=24.76_MS-SSIM=0.8896_LPIPS=0.362_Q=42.png', 'BPG+LDPC(0.028 CBR)'],
-        ['omri-d-cohen/BPG+LDPC_KdivN0.049_PSNR=26.742_MS-SSIM=0.9305_LPIPS=0.231_Q=39.png', 'BPG+LDPC(0.049 CBR)'],
-        ['omri-d-cohen/DJSCC_KdivN0.0208_PSNR25.09_LPIPS0.441.png', 'DeepJSCC(0.0208 CBR)'],
-        ['omri-d-cohen/DJSCC_KdivN0.0416_PSNR27.046_LPIPS0.25.png', 'DeepJSCC(0.0416 CBR)'],
+        ['omri-d-cohen/BPG+LDPC_KdivN0.028_PSNR=24.76_MS-SSIM=0.8896_LPIPS=0.362_Q=42.png', 'BPG+LDPC (0.028 CBR)'],
+        ['omri-d-cohen/BPG+LDPC_KdivN0.049_PSNR=26.742_MS-SSIM=0.9305_LPIPS=0.231_Q=39.png', 'BPG+LDPC (0.049 CBR)'],
+        ['omri-d-cohen/DJSCC_KdivN0.0208_PSNR25.09_LPIPS0.441.png', 'Deep JSCC (0.021 CBR)'],
+        ['omri-d-cohen/DJSCC_KdivN0.0416_PSNR27.046_LPIPS0.25.png', 'Deep JSCC (0.042 CBR)'],
         ['omri-d-cohen/original.jpg', 'Original', 'Original'],
     ],
     'thumb': 'omri-d-cohen/thumb.png'
+},
+'kodim17': {
+    'imginfo': 'Kodak/kodim15.png',
+    'fullres': '',
+    'loadingRatio': '66.66666666666666%',
+    'left': ['kodim17/NTSCC_KdivN0.024_PSNR31.668_MSSSIM14.882_LPIPS0.045.png', 'NTSCC (Perceptual): 0.024 CBR'],
+    'right': [
+        ['kodim17/BPG+LDPC_KdivN=0.026_PSNR=31.9385_MS-SSIM=0.959_LPIPS=0.1429_Q=36.png', 'BPG+LDPC (0.026 CBR)'],
+        ['kodim17/BPG+LDPC_KdivN=0.049_PSNR=34.6345_MS-SSIM=0.9775_LPIPS=0.0842_Q=31.png', 'BPG+LDPC (0.049 CBR)'],
+        ['kodim17/DJSCC_KdivN0.0416_PSNR31.828_LPIPS0.135.png', 'Deep JSCC (0.042 CBR)'],
+        ['kodim17/original.png', 'Original', 'Original'],
+    ],
+    'thumb': 'kodim17/thumb.png'
 },
 };
 /// INPUT_DATA_END
 
 let PREFIX = 'image/';
-let order = ['gracehues-photography', 'kodim15', 'kodim02', 'omri-d-cohen'];
+let order = ['kodim02', 'kodim15', 'kodim17',  'gracehues-photography', 'omri-d-cohen'];
 let currentImage = null;
 
 $(document).ready(function () {
